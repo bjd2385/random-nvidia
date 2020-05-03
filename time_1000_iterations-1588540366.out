@@ -1,0 +1,28 @@
+==21588== NVPROF is profiling process 21588, command: /home/brandon/projects/minecraft/venv/bin/python example.py
+Time: 0.0534815788269043
+==21588== Profiling application: /home/brandon/projects/minecraft/venv/bin/python example.py
+==21588== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   66.22%  33.518ms         2  16.759ms  16.645ms  16.874ms  [CUDA memcpy HtoD]
+                   33.71%  17.064ms         1  17.064ms  17.064ms  17.064ms  [CUDA memcpy DtoH]
+                    0.07%  33.823us         1  33.823us  33.823us  33.823us  multiply_them
+      API calls:   58.01%  161.68ms         1  161.68ms  161.68ms  161.68ms  cuCtxCreate
+                   22.83%  63.638ms         1  63.638ms  63.638ms  63.638ms  cuCtxDetach
+                   12.10%  33.737ms         2  16.868ms  16.715ms  17.022ms  cuMemcpyHtoD
+                    6.17%  17.199ms         1  17.199ms  17.199ms  17.199ms  cuMemcpyDtoH
+                    0.34%  941.59us         3  313.86us  254.69us  430.07us  cuMemAlloc
+                    0.27%  747.69us         3  249.23us  217.40us  312.80us  cuMemFree
+                    0.16%  455.44us         1  455.44us  455.44us  455.44us  cuModuleLoadDataEx
+                    0.06%  163.70us         1  163.70us  163.70us  163.70us  cuModuleUnload
+                    0.03%  94.257us         1  94.257us  94.257us  94.257us  cuCtxSynchronize
+                    0.02%  48.390us         1  48.390us  48.390us  48.390us  cuLaunchKernel
+                    0.00%  5.1900us         3  1.7300us     450ns  3.0860us  cuDeviceGetCount
+                    0.00%  4.2680us         1  4.2680us  4.2680us  4.2680us  cuFuncSetBlockShape
+                    0.00%  3.4560us         2  1.7280us     330ns  3.1260us  cuCtxPushCurrent
+                    0.00%  3.0150us         1  3.0150us  3.0150us  3.0150us  cuDeviceGetPCIBusId
+                    0.00%  2.4350us         2  1.2170us     872ns  1.5630us  cuDeviceGet
+                    0.00%  2.2840us         2  1.1420us     601ns  1.6830us  cuCtxPopCurrent
+                    0.00%  2.1350us         3     711ns     581ns     952ns  cuDeviceGetAttribute
+                    0.00%  1.9240us         1  1.9240us  1.9240us  1.9240us  cuModuleGetFunction
+                    0.00%  1.5330us         2     766ns     721ns     812ns  cuCtxGetDevice
+                    0.00%     591ns         1     591ns     591ns     591ns  cuDeviceComputeCapability
